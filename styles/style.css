@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(5, 178, 190, 0.8);
+    padding: 20px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.grid-item {
+    background-color: rgba(206, 7, 173, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 5em;
+    text-align: center;
+}
+
+.super-container{
+    display: grid;
+    gap: 3em;
+    justify-content: space-around;
+}
